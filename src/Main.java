@@ -15,8 +15,9 @@ public class Main {
         System.out.print("Convert to Celsius or Fahrenheit? (C or F): ");
         unit = scanner.next().toUpperCase();
 
-        System.out.println(temp);
-        System.out.println(unit);
+        newTemp = (unit.equals("C")) ? (temp -32) * 5 / 9 : (temp * 5 / 9) + 32;
+
+        System.out.printf("%.1f Degrees in %s ", newTemp, unit);
 
         scanner.close();
 
