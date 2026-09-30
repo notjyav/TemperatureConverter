@@ -13,7 +13,7 @@ public class Main {
         temp = scanner.nextDouble();
 
         System.out.print("Convert to Celsius or Fahrenheit? (C or F): ");
-        unit = scanner.next();
+        unit = scanner.next().toUpperCase();
 
         System.out.println(temp);
         System.out.println(unit);
